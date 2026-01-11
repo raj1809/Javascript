@@ -73,3 +73,6 @@ console.log(m, n);
 
 let timeInMin = 5
 console.log("Time in seconds is", timeInMin * 60 + " seconds");
+
+// test
+
