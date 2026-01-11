@@ -1,64 +1,75 @@
-// const name = "jason"
-// let city = "Miami"
-// let  email = "jason@miami.com"
+// JavaScript variables are containers for data
+// Variables are labels for data values
+// Variables are identified with unique names called identifiers
+// Names can be short like x, y, z
+// Names can be descriptive age, sum, carName
 
-// console.log([name, city, email]);
+const country ="USA" //  const values cant be changed
+accountEmail =  "test@test.com"
+accountPassword = "123ERT"
+accountCity = "NYC"
+let accountState
+console.log(accountEmail)
 
+console.table([accountCity, accountEmail, accountPassword, accountState]) // to print into table
 
-// let score = 11
+// Variables declared with let have Block Scope
+// Variables declared with let must be Declared before use
+// Variables declared with let cannot be Redeclared in the same scope
 
-// console.log(typeof score);
-// console.log(typeof (score));
+{
+    let x
+}
+// x cant be used here
 
-// let newScore = "500"
+  // let x = john 
+// let x = test // cant redeclare
 
-// let valueInNumber = Number(newScore)
-// console.log(typeof valueInNumber);
+// Redeclaring a variable with let, in another block, IS allowed:
 
-// let newScore1 = "500dmcs"
+let x = 22
+{
+    let x  = 25
+}
 
-// let valueInNum = Number(newScore1) // to convert into number
-// console.log(typeof valueInNum);
-// console.log(valueInNum);
+{
+    let x = 44
+}
 
+// Using a let variable before it is declared will result in a ReferenceError:
+// carName = "Toyota"
+// let carName = "BMW" // this is not allowed 
 
-//=======================Operations================================
+// Variables defined with const cannot be Redeclared or Reassigned
+// Variables defined with const have Block Scope
 
-let value = 9
-let negativeValue = -value
+// Always declare a variable with const when you know that the value should not be changed
+// Use const when you declare: A new Array, A new Object, A new Function, A new RegExp
 
-console.log(negativeValue);
+// You can change the elements of a constant array:
 
+const cars = ["TATA", "MG"]
+cars[0] = "Toyota"
+console.log(cars);
 
-let str1 = "Hello"
-
-let str2 = "test"
-
-let str3 = str1 + str2
-console.log(str3);
-
-
-console.log("1" + 2);
-console.log(1  + "2");
-console.log("1" + 2 + 2);
-console.log(1 + 2 + "2");
-
-// ===============================================================
-
-console.log(c);
-var c = 11
-
-//console.log(d);
-//let d = 222
-
-// -==============================================================-
-const cars = ["BMW", "Mercedez", "Ferrari"]
-
-cars[3] = "Toyota"
 cars.push("Audi")
-console.log(cars)
+console.log(cars);
 
-const car = {type: "Fiat", model: "2018", color: "White"};
-car.color = "Red";
-car.owner =  "Mitch"
+//But you can NOT reassign the array:
+const fruits = ["apple", "orange"]
+// fruits = ["Grapes", "Kiwi"] // Error --> TypeError: Assignment to constant variable
+
+// You can change the properties of a constant object:
+const car = {type:"Fiat", model:"A1", color:"black"}
 console.log(car);
+
+car.color = "red" // change a property
+console.log(car);
+
+car.owner = "king" //  add a property
+console.log(car);
+
+// But you can NOT reassign the object:
+// const car = {type:"Fiat", model:"500", color:"white"};
+// car = {type:"Volvo", model:"EX60", color:"red"}    // ERROR
+
