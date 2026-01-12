@@ -27,3 +27,27 @@ let stringNum = String(someNumber)
 console.log(stringNum);
 console.log(typeof stringNum);
 
+console.log("**************************************************");
+
+let str1 = "one"
+let str2 = " tiger"
+console.log(str1 + str2);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
+console.log("5" - 3);
+console.log(10 + true);
+console.log(10 + false);
+console.log("10" * "2");
+console.log(Number("abc"));
+console.log(Boolean(""));
+console.log(Boolean(" "));
+console.log(null + 1);
+console.log(undefined + 1);
+console.log("5" == 5);
+console.log("5" === 5);
+console.log(null == undefined);
+console.log(null === undefined);
+console.log(Boolean([]));
