@@ -20,7 +20,7 @@
 
 const min = 10
 const max = 20
- 
-console.log(Math.floor(Math.random (max - min) * 10) + min) // will give value betwen 10 - 20
 
+const result = Math.floor(Math.random() * (max - min + 1)) + min
+console.log(result)
 
