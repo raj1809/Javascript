@@ -12,7 +12,7 @@ console.log(testName.toUpperCase())
 // }
 
 // 3.
-let username = "   qa_user   "
+let username = "   qa_user   "  
 console.log(username.trim());
 
 //  4. 
